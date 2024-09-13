@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-style: normal;
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  min-width: 1660px;
+  max-width: 1980px;
+  margin: 0 auto;
+  background-color: #11071f;
+  color: white;
+}
+
+.body-wrap {
+  width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main__svg,
+.video__svg {
+  position: absolute;
+  top: -30vh;
+  left: 20vw;
+  z-index: -1;
+  border-radius: 100%;
+  fill: radial-gradient(50% 50% at 50% 50%, rgb(118, 60, 172) 0%, rgb(50, 15, 133) 100%);
+}
+
+.video__svg {
+  top: 45vh;
+  left: 55vw;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+}
