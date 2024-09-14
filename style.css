@@ -1,22 +1,159 @@
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Poppins"),
+       url("./fonts/PoppinsRegular.woff2") format("woff2"),
+       url("./fonts/PoppinsRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Neuropol";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Preahvihear"),
+       url("./fonts/NeuropolMedium.woff2") format("woff2"),
+       url("./fonts/NeuropolMedium.woff") format("woff");
+}
+
+:root {
+  --font-family: "Neuropol", "Arial", sans-serif;
+  --second-family:"Poppins", "Arial", sans-serif;
+  --white: #fff;
+  --dark-purple: #11071f;
+  --violet: #7127ba;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font-family);
-  font-style: normal;
 }
 
 .body {
-  width: 100vw;
-  height: 100vh;
-  min-width: 1660px;
-  max-width: 1980px;
+  font-family: var(--font-family);
+  font-style: normal;
+  min-width: 320px;
+  width: 320px;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  /* max-width: 1980px; */
   margin: 0 auto;
   background-color: #11071f;
   color: white;
 }
 
-.body-wrap {
+.header__title {
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 auto;
+  width: 320px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__title span:first-child {
+  align-self:flex-start;
+}
+
+.header__title span:nth-child(2) {
+  align-self: center;
+}
+
+.header__title span:last-child {
+  align-self: flex-end;
+}
+
+.main {
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+  /* background: url(./img/Gradient.svg) no-repeat; */
+}
+
+.main::before {
+  content: "";
+  width: 385px;
+  height: 481px;
+  background: url(./img/Gradient.svg) no-repeat;
+  position: absolute;
+  top: -300px;
+  left: 50px;
+  z-index: -2;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.about__avatar {
+
+  position: relative;
+}
+
+.about__avatar img {
+  width: 223px;
+  height: 223px;
+
+  border-radius: 0px 96px 0px 96px / 0px 96px 0px 96px;
+}
+
+.about__avatar::before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  transform: translate(10px, 8px);
+  z-index: -1;
+  background: radial-gradient(50% 50% at 50% 50%, rgb(118, 60, 172) 0%, rgb(50, 15, 133) 100%);;
+  filter: blur(40px);
+  border-radius: inherit;
+}
+
+.about__wrap-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  font-size: 12px;
+}
+
+.about__wrap-text::before {
+  content: "";
+  width: 385px;
+  height: 481px;
+  background: url(./img/Gradient.svg) no-repeat;
+  position: absolute;
+  top: -200px;
+  left: -200px;
+  z-index: -2;
+}
+
+.about__link {
+  color: var(--violet);
+  text-decoration: none;
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+}
+
+
+/* .body-wrap {
   width: 1440px;
   margin: 0 auto;
   text-align: center;
@@ -44,4 +181,4 @@
   margin: 0 auto;
   margin-bottom: 50px;
 
-}
+} */
