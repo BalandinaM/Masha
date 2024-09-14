@@ -3,3 +3,14 @@
   height: 450px;
   text-align: center;
 }
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(17,7,31,1) 13%, rgba(255,255,255,1) 50%, rgba(17,7,31,1) 87%);
+
+}
+
+.swiper-scrollbar-drag {
+  /* background: rgb(255,255,255); */
+  background: #11071f
+}

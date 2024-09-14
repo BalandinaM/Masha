@@ -115,7 +115,7 @@
   inset: -5px;
   transform: translate(10px, 8px);
   z-index: -1;
-  background: radial-gradient(50% 50% at 50% 50%, rgb(118, 60, 172) 0%, rgb(50, 15, 133) 100%);;
+  background: radial-gradient(50% 50% at 50% 50%, rgb(118, 60, 172) 0%, rgb(50, 15, 133) 100%);
   filter: blur(40px);
   border-radius: inherit;
 }
