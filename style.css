@@ -70,7 +70,7 @@
 }
 
 .main {
-  padding: 0 20px;
+  /* padding: 0 20px; */
   margin: 0 auto;
   position: relative;
   /* background: url(./img/Gradient.svg) no-repeat; */
@@ -94,6 +94,7 @@
   gap: 50px;
   margin: 0 auto;
   margin-bottom: 50px;
+  padding: 0 20px;
 }
 
 .about__avatar {
