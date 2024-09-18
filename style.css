@@ -38,7 +38,7 @@
   /* width: 320px; */
   width: 100vw;
   /* height: 100vh; */
-  /* max-width: 1980px; */
+  max-width: 1024px;
   margin: 0 auto;
   /* background-color: #11071f; */
   /* background-image: radial-gradient(50% 50% at 50% 50%, rgb(118, 60, 172) 0%, rgb(50, 15, 133) 100%); */
@@ -51,10 +51,10 @@
   color: white;
 }
 
-.body-wrap {
+/* .body-wrap {
   width: 320px;
   margin: 0 auto;
-}
+} */
 
 .header__title {
   font-family: var(--font-family);
@@ -138,4 +138,139 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
+}
+
+.exsamplesOfWorks__title {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer {
+
+}
+
+.footer__wrap-link {
+  padding: 30px 20px;
+  text-align: right;
+}
+
+.footer__wrap-link a {
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--violet);
+}
+
+
+
+/* Viewport  720px*/
+
+@media (min-width: 720px) {
+  .header__title {
+    display: block;
+    width: 720px;
+    text-align: center;
+    font-size: 26px;
+    padding: 40px;
+  }
+
+  .about__wrap-text {
+    font-size: 16px;
+  }
+
+  .about__link {
+    font-size: 18px;
+  }
+
+  .exsamplesOfWorks {
+    padding: 0 40px;
+  }
+
+  .exsamplesOfWorks__title {
+    font-size: 20px;
+  }
+
+  .exsamplesOfWorks__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    height: 666px;
+    overflow: scroll;
+  }
+
+  /* https://www.dev-notes.ru/articles/css/guide-styling-css-scrollbars/ */
+
+  /* Define the scrollbar style */
+/* .exsamplesOfWorks__wrapper::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+} */
+
+/* Define the thumb style */
+/* .exsamplesOfWorks__wrapper::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom right, #4d7fff 0%, #1a56ff 100%);
+  border-radius: 5px;
+} */
+
+/* Define the track style */
+/* .exsamplesOfWorks__wrapper::-webkit-scrollbar-track {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+} */
+
+/* Define the button style */
+/* .exsamplesOfWorks__wrapper::-webkit-scrollbar-button {
+  background-color: #4d7fff;
+  border-radius: 5px;
+} */
+
+/* Define the button style when being hovered over */
+/* .exsamplesOfWorks__wrapper::-webkit-scrollbar-button:hover {
+  background-color: #999999;
+} */
+
+  .footer__wrap-link {
+    padding: 30px 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .body {}
+
+  .header__title {
+    width: 100%;
+    padding: 40px;
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .about {
+    padding: 0 80px;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about__avatar {
+    align-self: start;
+  }
+
+  .about__avatar img {
+    width: 300px;
+  height: 300px;
+  }
+
+  .about__wrap-text {
+    font-size: 18px;
+    align-self: end;
+  }
+
+  .about__link {
+    font-size: 20px;
+  }
 }
