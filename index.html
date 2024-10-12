@@ -21,9 +21,8 @@
         </div>
         <div class="about__wrap-text">
           <p>Привет! Меня зовут Мария.</p>
-          <p>Я автор цифрового контента</p>
           <p>Reels | нейросети | видеомонтаж.</p>
-          <p>Создаю креативные видео.</p>
+          <p>Мобильный контент <br>для тебя и твоего бренда.</p>
           <p>Цены от 500 &#8381;</p>
           <a class="about__link" href="https://t.me/MarySueArt">Связаться со мной в ТГ. <span>Клик!</span></a>
         </div>
@@ -32,13 +31,13 @@
         <h2 class="exsamplesOfWorks__title">Мои работы</h2>
         <div class="swiper">
           <div class="swiper-wrapper exsamplesOfWorks__wrapper">
-            <div class="swiper-slide exsamplesOfWorks__video">
-              <!-- <video controls muted loop width="232" height="424">
+            <!-- <div class="swiper-slide exsamplesOfWorks__video">
+              <video controls muted loop width="232" height="424">
                 <source src="./video/beautyPresentation.mp4" type="video/mp4">
                 <source src="./video/beautyPresentation.ogv" type="video/ogg">
                 <source src="./video/beautyPresentation.avi" type="video/avi">
                 Ваш браузер не поддерживает встроенные видео.
-              </video> -->
+              </video>
             </div>
             <div class="swiper-slide">
               <video src="./video/beautyPresentation.mp4" controls muted loop width="232" height="424"></video>
@@ -60,7 +59,7 @@
             </div>
             <div class="swiper-slide">
               <video src="./video/IMG_6500.MOV" controls muted loop width="232" height="424"></video>
-            </div>
+            </div> -->
 
           </div>
           <!-- <div class="swiper-pagination"></div> -->
@@ -75,12 +74,21 @@
         <a href="https://t.me/Balandina_MS">Copyright by MarinaB</a>
       </div>
     </footer>
-  <!-- </div> -->
-</body>
-<script src=" https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js "></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="./js/main.js" type="module" defer></script>
-<!-- <script src="./js/swiper.js"></script>
-<script src="./js/script.js"></script>
-<script src="./js/particles.js"></script> -->
+
+  <template id="video-item">
+    <div class="swiper-slide exsamplesOfWorks__video">
+      <video controls muted loop width="232" height="424">
+        <source class="video-item--mp4" src="./video/beautyPresentation.mp4" type="video/mp4">
+        <source class="video-item--ogg" src="./video/beautyPresentation.ogv" type="video/ogg">
+        <source class="video-item--avi" src="./video/beautyPresentation.avi" type="video/avi">
+        Ваш браузер не поддерживает встроенные видео.
+      </video>
+    </div>
+  </template>
+
+  <script src=" https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js "></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/main.js" type="module" defer></script>
+
+  </body>
 </html>
