@@ -56,22 +56,8 @@ particlesJS("particles-js", {
     events: {
       onhover: {
         enable: false,
-        //mode: "repulse",
       },
-      //resize: true,
     },
-    // modes: {
-    //   repulse: {
-    //     distance: 100,
-    //     duration: 0.4,
-    //   },
-    //   push: {
-    //     particles_nb: 4,
-    //   },
-    //   remove: {
-    //     particles_nb: 2,
-    //   },
-    // },
   },
   retina_detect: true,
 });

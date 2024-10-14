@@ -2,29 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const width = window.innerWidth
   if (width < 720){
     const swiper = new Swiper('.swiper', {
-      // Optional parameters
       direction: 'horizontal',
       loop: true,
-      //nested: true,
-
-      // // If we need pagination
-      // pagination: {
-      //   el: '.swiper-pagination',
-      // },
-
-      // pagination: {
-      //   type: 'fraction',
-      // },
-
-      // Navigation arrows
-      // navigation: {
-      //   nextEl: '.swiper-button-next',
-      //   prevEl: '.swiper-button-prev',
-      // },
-
-      //navigation: true,
-
-      // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
       },
@@ -40,32 +19,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 })
-
-// const swiper = new Swiper('.swiper', {
-//   // Optional parameters
-//   direction: 'horizontal',
-//   loop: true,
-//   //nested: true,
-
-//   // // If we need pagination
-//   // pagination: {
-//   //   el: '.swiper-pagination',
-//   // },
-
-//   // pagination: {
-//   //   type: 'fraction',
-//   // },
-
-//   // Navigation arrows
-//   // navigation: {
-//   //   nextEl: '.swiper-button-next',
-//   //   prevEl: '.swiper-button-prev',
-//   // },
-
-//   //navigation: true,
-
-//   // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-// });
