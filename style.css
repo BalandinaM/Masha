@@ -134,10 +134,10 @@
 
 .about__link {
 
-  color: transparent;
-  background-clip: text;
+  color: var(--white);
+  /* background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(270deg, rgba(55,20,103,1) 2%, rgba(255,255,255,1) 100%);
+  background-image: linear-gradient(270deg, rgba(55,20,103,1) 2%, rgba(255,255,255,1) 100%); */
 
   text-decoration: none;
   font-size: 14px;
